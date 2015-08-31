@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tanks game</title>
+</head>
+<body>
+<style>
+	#myGame {
+		width: 640px;
+		height: 480px;
+		margin: 0 auto;
+		font-family: Arial, sans-serif;
+		cursor: none;
+	}
+
+	.info {
+		padding: 10px;
+		background: #dfdfdf;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	canvas {
+		position: absolute;
+	}
+</style>
+<div id="myGame">
+	<div class='info'>
+		<h1>Controls:</h1>
+		<p>w,a,s,d | arrow keys: movement</p>
+		<p>click | space: shooting</p>
+	</div>
+	<canvas id="background" width="640" height="480"></canvas>
+	<canvas id="tankGame" width="640" height="480"></canvas>
+</div>
+	
+<script src='app.js'></script>
+</body>
+</html>
